@@ -1,6 +1,6 @@
-# Make TON Telegram Mini App 8: Telegram Mini App With Stars Payments
+# Telegram Mini App With Stars Payments
 
-Guide #8 in the Make TON Telegram Mini App series! A complete example of a Telegram Mini App for purchasing digital items using Telegram Stars, built with Next.js 15, TypeScript, and Tailwind CSS.
+A complete full-stack example of a modern Telegram Mini App for selling digital products using Telegram Stars payments. Built with Next.js 15, TypeScript, Tailwind CSS, and Telegram Bot API, this app includes secure invoice generation, purchase history, secret content access after purchase, and refund processing via a Python companion bot. Ideal for Web3 developers, Telegram bot creators, and digital entrepreneurs looking to monetize through Telegram's payment ecosystem.
 
 > **Note:** This application is designed to work exclusively within the Telegram ecosystem as a Telegram Mini App. It should be accessed only through Telegram and not directly via a web browser.
 
@@ -24,8 +24,8 @@ Guide #8 in the Make TON Telegram Mini App series! A complete example of a Teleg
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/nikandr-surkov/Make-TON-Telegram-Mini-App-8.git
-cd Make-TON-Telegram-Mini-App-8
+git clone https://github.com/nikandr-surkov/telegram-mini-app-stars-payments.git
+cd telegram-mini-app-stars-payments
 npm install
 ```
 
