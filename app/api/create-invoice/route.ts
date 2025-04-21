@@ -17,15 +17,15 @@ export async function POST(req: NextRequest) {
     if (!BOT_TOKEN) {
       return NextResponse.json({ error: 'Bot token not configured' }, { status: 500 });
     }
-
-    const payload = randomUUID();
+    const pay = randomUUID();
+    const payload = JSON.stringify({ pay });
     const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/createInvoiceLink`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         title:title,
         description:`Buy ${title}`,
-        payload: 4, // In production, use a JSON string with a unique request ID
+        payload: payload, // In production, use a JSON string with a unique request ID
         currency: 'XTR',    // Telegram Stars currency code
         prices: [{ label: "dsadsa", amount: Number(amount) }],
         start_parameter: "start_parameter" // Required for some clients
